@@ -24,7 +24,7 @@ global $wpdb;
     $finalmessage = 'Hi, you\'ve received a new message:' . '<br>' . $message_content . '<br>';
     $ids = $message['sender_id'] . $message['reciever_id'];
 
-    // I found that the messages table can somtimes have the same ids for both
+    // I found that the messages table can sometimes have the same ids for both
     if ($sender_id == $reciever_id){
         $user_info = get_userdata($sender[0]);
         $email = $user_info->user_email;
