@@ -14,4 +14,7 @@ This code uses the "yobro_after_store_message "and "yobro_new_conversation_creat
 ### Set up
 
  - Add a new tinytext column to your "yobro_messages" called "email_sent"
- - Create a new Code Snippet that runs everywhere, paste the php from the file
+ - Create a new Code Snippet that runs everywhere, paste the email-notifications.php from the file
+ - Remove the php tag <?php ?>
+ - Add your table prefix to all the parts that are commented
+ - Save and give it a go
